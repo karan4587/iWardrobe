@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" userLabel="Login View Controller" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -28,10 +28,24 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddb-00-hYg" userLabel="FBLoginButton" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="177" y="354" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="N3T-mX-hHW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="CIn-dX-hXb" firstAttribute="top" secondItem="c8e-PF-Aco" secondAttribute="bottom" constant="40" id="W33-5s-nvF"/>
+                            <constraint firstAttribute="centerX" secondItem="Ddb-00-hYg" secondAttribute="centerX" id="bIg-CO-rtS"/>
+                            <constraint firstItem="Ddb-00-hYg" firstAttribute="top" secondItem="CIn-dX-hXb" secondAttribute="bottom" constant="90" id="dqN-dA-giQ"/>
                             <constraint firstAttribute="centerX" secondItem="CIn-dX-hXb" secondAttribute="centerX" id="io5-My-gtn"/>
                             <constraint firstAttribute="centerX" secondItem="c8e-PF-Aco" secondAttribute="centerX" id="qfm-so-3q9"/>
                             <constraint firstItem="c8e-PF-Aco" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="140" id="rJK-ut-0X7"/>
@@ -40,27 +54,36 @@
                             <mask key="subviews">
                                 <exclude reference="c8e-PF-Aco"/>
                                 <exclude reference="CIn-dX-hXb"/>
+                                <exclude reference="Ddb-00-hYg"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="qfm-so-3q9"/>
                                 <exclude reference="rJK-ut-0X7"/>
                                 <exclude reference="W33-5s-nvF"/>
                                 <exclude reference="io5-My-gtn"/>
+                                <exclude reference="bIg-CO-rtS"/>
+                                <exclude reference="dqN-dA-giQ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="c8e-PF-Aco"/>
                                 <include reference="CIn-dX-hXb"/>
+                                <include reference="Ddb-00-hYg"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="qfm-so-3q9"/>
                                 <include reference="rJK-ut-0X7"/>
                                 <include reference="W33-5s-nvF"/>
                                 <include reference="io5-My-gtn"/>
+                                <include reference="bIg-CO-rtS"/>
+                                <include reference="dqN-dA-giQ"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="FBLogin" destination="Ddb-00-hYg" id="wyA-eX-tAO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
