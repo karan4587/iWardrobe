@@ -17,6 +17,18 @@
 		9EA553AE1B6648C0001D6AFE /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA553AB1B6648C0001D6AFE /* FBSDKCoreKit.framework */; };
 		9EA553AF1B6648C0001D6AFE /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA553AC1B6648C0001D6AFE /* FBSDKLoginKit.framework */; };
 		9EA553B01B6648C0001D6AFE /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA553AD1B6648C0001D6AFE /* FBSDKShareKit.framework */; };
+		9EBDD9DE1B67E0AF00F9C0F4 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBDD9DD1B67E0AF00F9C0F4 /* MainVC.m */; };
+		9EBDD9E11B67E19000F9C0F4 /* AMSlideMenuMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBDD9E01B67E19000F9C0F4 /* AMSlideMenuMainViewController.m */; };
+		9EBDD9E41B67E2C300F9C0F4 /* AMSlideMenuLeftMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBDD9E31B67E2C300F9C0F4 /* AMSlideMenuLeftMenuSegue.m */; };
+		9EBDD9E81B67E33B00F9C0F4 /* AMSlideMenuLeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBDD9E71B67E33B00F9C0F4 /* AMSlideMenuLeftTableViewController.m */; };
+		9EBDD9EB1B67E37D00F9C0F4 /* AMSlideMenuContentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBDD9EA1B67E37D00F9C0F4 /* AMSlideMenuContentSegue.m */; };
+		9EBDD9EE1B67E40000F9C0F4 /* AMSlideMenuRightMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBDD9ED1B67E40000F9C0F4 /* AMSlideMenuRightMenuSegue.m */; };
+		9EBDD9F11B67E43200F9C0F4 /* AMSlideMenuRightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBDD9F01B67E43200F9C0F4 /* AMSlideMenuRightTableViewController.m */; };
+		9EBDD9F81B67E82F00F9C0F4 /* UIColor+CreateMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBDD9F71B67E82F00F9C0F4 /* UIColor+CreateMethods.m */; };
+		9EBDD9FB1B67EB5600F9C0F4 /* LeftMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBDD9FA1B67EB5600F9C0F4 /* LeftMenuVC.m */; };
+		9ED74F701B67FE4F00184459 /* Slide1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED74F6F1B67FE4F00184459 /* Slide1VC.m */; };
+		9ED74F7B1B68040300184459 /* simpleMenuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ED74F791B68040300184459 /* simpleMenuButton.png */; };
+		9ED74F7C1B68040300184459 /* simpleMenuButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ED74F7A1B68040300184459 /* simpleMenuButton@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +58,29 @@
 		9EA553AB1B6648C0001D6AFE /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		9EA553AC1B6648C0001D6AFE /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		9EA553AD1B6648C0001D6AFE /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		9EBDD9DC1B67E0AF00F9C0F4 /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		9EBDD9DD1B67E0AF00F9C0F4 /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		9EBDD9DF1B67E19000F9C0F4 /* AMSlideMenuMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuMainViewController.h; sourceTree = "<group>"; };
+		9EBDD9E01B67E19000F9C0F4 /* AMSlideMenuMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuMainViewController.m; sourceTree = "<group>"; };
+		9EBDD9E21B67E2C300F9C0F4 /* AMSlideMenuLeftMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuLeftMenuSegue.h; sourceTree = "<group>"; };
+		9EBDD9E31B67E2C300F9C0F4 /* AMSlideMenuLeftMenuSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuLeftMenuSegue.m; sourceTree = "<group>"; };
+		9EBDD9E51B67E2ED00F9C0F4 /* AMSlideMenuProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuProtocols.h; sourceTree = "<group>"; };
+		9EBDD9E61B67E33B00F9C0F4 /* AMSlideMenuLeftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuLeftTableViewController.h; sourceTree = "<group>"; };
+		9EBDD9E71B67E33B00F9C0F4 /* AMSlideMenuLeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuLeftTableViewController.m; sourceTree = "<group>"; };
+		9EBDD9E91B67E37D00F9C0F4 /* AMSlideMenuContentSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuContentSegue.h; sourceTree = "<group>"; };
+		9EBDD9EA1B67E37D00F9C0F4 /* AMSlideMenuContentSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuContentSegue.m; sourceTree = "<group>"; };
+		9EBDD9EC1B67E40000F9C0F4 /* AMSlideMenuRightMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuRightMenuSegue.h; sourceTree = "<group>"; };
+		9EBDD9ED1B67E40000F9C0F4 /* AMSlideMenuRightMenuSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuRightMenuSegue.m; sourceTree = "<group>"; };
+		9EBDD9EF1B67E43200F9C0F4 /* AMSlideMenuRightTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuRightTableViewController.h; sourceTree = "<group>"; };
+		9EBDD9F01B67E43200F9C0F4 /* AMSlideMenuRightTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuRightTableViewController.m; sourceTree = "<group>"; };
+		9EBDD9F61B67E82F00F9C0F4 /* UIColor+CreateMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CreateMethods.h"; sourceTree = "<group>"; };
+		9EBDD9F71B67E82F00F9C0F4 /* UIColor+CreateMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CreateMethods.m"; sourceTree = "<group>"; };
+		9EBDD9F91B67EB5600F9C0F4 /* LeftMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuVC.h; sourceTree = "<group>"; };
+		9EBDD9FA1B67EB5600F9C0F4 /* LeftMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuVC.m; sourceTree = "<group>"; };
+		9ED74F6E1B67FE4F00184459 /* Slide1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Slide1VC.h; sourceTree = "<group>"; };
+		9ED74F6F1B67FE4F00184459 /* Slide1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Slide1VC.m; sourceTree = "<group>"; };
+		9ED74F791B68040300184459 /* simpleMenuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = simpleMenuButton.png; sourceTree = "<group>"; };
+		9ED74F7A1B68040300184459 /* simpleMenuButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "simpleMenuButton@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +126,8 @@
 		9EA553771B663E10001D6AFE /* iWardrobe */ = {
 			isa = PBXGroup;
 			children = (
+				9EBDD9DB1B67E03100F9C0F4 /* View Controllers */,
+				9EBDD9DA1B67DE7500F9C0F4 /* AMSlideMenu */,
 				9EA5537C1B663E10001D6AFE /* AppDelegate.h */,
 				9EA5537D1B663E10001D6AFE /* AppDelegate.m */,
 				9EA5537F1B663E10001D6AFE /* LoginViewController.h */,
@@ -106,6 +143,8 @@
 		9EA553781B663E10001D6AFE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9ED74F791B68040300184459 /* simpleMenuButton.png */,
+				9ED74F7A1B68040300184459 /* simpleMenuButton@2x.png */,
 				9EA553791B663E10001D6AFE /* Info.plist */,
 				9EA5537A1B663E10001D6AFE /* main.m */,
 			);
@@ -137,6 +176,49 @@
 				9EA553AD1B6648C0001D6AFE /* FBSDKShareKit.framework */,
 			);
 			name = Framework;
+			sourceTree = "<group>";
+		};
+		9EBDD9DA1B67DE7500F9C0F4 /* AMSlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				9EBDD9EF1B67E43200F9C0F4 /* AMSlideMenuRightTableViewController.h */,
+				9EBDD9F01B67E43200F9C0F4 /* AMSlideMenuRightTableViewController.m */,
+				9EBDD9EC1B67E40000F9C0F4 /* AMSlideMenuRightMenuSegue.h */,
+				9EBDD9ED1B67E40000F9C0F4 /* AMSlideMenuRightMenuSegue.m */,
+				9EBDD9E91B67E37D00F9C0F4 /* AMSlideMenuContentSegue.h */,
+				9EBDD9EA1B67E37D00F9C0F4 /* AMSlideMenuContentSegue.m */,
+				9EBDD9E61B67E33B00F9C0F4 /* AMSlideMenuLeftTableViewController.h */,
+				9EBDD9E71B67E33B00F9C0F4 /* AMSlideMenuLeftTableViewController.m */,
+				9EBDD9E51B67E2ED00F9C0F4 /* AMSlideMenuProtocols.h */,
+				9EBDD9E21B67E2C300F9C0F4 /* AMSlideMenuLeftMenuSegue.h */,
+				9EBDD9E31B67E2C300F9C0F4 /* AMSlideMenuLeftMenuSegue.m */,
+				9EBDD9DF1B67E19000F9C0F4 /* AMSlideMenuMainViewController.h */,
+				9EBDD9E01B67E19000F9C0F4 /* AMSlideMenuMainViewController.m */,
+			);
+			name = AMSlideMenu;
+			sourceTree = "<group>";
+		};
+		9EBDD9DB1B67E03100F9C0F4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9EBDD9F91B67EB5600F9C0F4 /* LeftMenuVC.h */,
+				9ED74F6E1B67FE4F00184459 /* Slide1VC.h */,
+				9ED74F6F1B67FE4F00184459 /* Slide1VC.m */,
+				9EBDD9FA1B67EB5600F9C0F4 /* LeftMenuVC.m */,
+				9EBDD9F51B67E7FC00F9C0F4 /* Categories */,
+				9EBDD9DC1B67E0AF00F9C0F4 /* MainVC.h */,
+				9EBDD9DD1B67E0AF00F9C0F4 /* MainVC.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9EBDD9F51B67E7FC00F9C0F4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9EBDD9F61B67E82F00F9C0F4 /* UIColor+CreateMethods.h */,
+				9EBDD9F71B67E82F00F9C0F4 /* UIColor+CreateMethods.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +302,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EA553841B663E10001D6AFE /* Main.storyboard in Resources */,
+				9ED74F7B1B68040300184459 /* simpleMenuButton.png in Resources */,
 				9EA553891B663E10001D6AFE /* LaunchScreen.xib in Resources */,
 				9EA553861B663E10001D6AFE /* Images.xcassets in Resources */,
+				9ED74F7C1B68040300184459 /* simpleMenuButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,9 +323,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EBDD9FB1B67EB5600F9C0F4 /* LeftMenuVC.m in Sources */,
+				9EBDD9EE1B67E40000F9C0F4 /* AMSlideMenuRightMenuSegue.m in Sources */,
 				9EA553811B663E10001D6AFE /* LoginViewController.m in Sources */,
+				9EBDD9DE1B67E0AF00F9C0F4 /* MainVC.m in Sources */,
+				9EBDD9F11B67E43200F9C0F4 /* AMSlideMenuRightTableViewController.m in Sources */,
 				9EA5537E1B663E10001D6AFE /* AppDelegate.m in Sources */,
 				9EA5537B1B663E10001D6AFE /* main.m in Sources */,
+				9EBDD9EB1B67E37D00F9C0F4 /* AMSlideMenuContentSegue.m in Sources */,
+				9EBDD9F81B67E82F00F9C0F4 /* UIColor+CreateMethods.m in Sources */,
+				9EBDD9E81B67E33B00F9C0F4 /* AMSlideMenuLeftTableViewController.m in Sources */,
+				9EBDD9E41B67E2C300F9C0F4 /* AMSlideMenuLeftMenuSegue.m in Sources */,
+				9EBDD9E11B67E19000F9C0F4 /* AMSlideMenuMainViewController.m in Sources */,
+				9ED74F701B67FE4F00184459 /* Slide1VC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

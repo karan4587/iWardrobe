@@ -22,7 +22,7 @@
     
     if ([FBSDKAccessToken currentAccessToken]) {
         // User is logged in, Lets go on our home screen
-        
+        [self performSegueWithIdentifier: @"showMainVC" sender: self];
     } else {
         [self.FBLogin setDelegate:self];
         self.FBLogin.readPermissions = @[@"public_profile", @"email"];
@@ -46,6 +46,7 @@
         if ([result.grantedPermissions containsObject:@"email"]) {
             // Do work
             NSLog(@"User logged in successfully! :)");
+            [self performSegueWithIdentifier: @"showMainVC" sender: self];
         }
     }
 }
