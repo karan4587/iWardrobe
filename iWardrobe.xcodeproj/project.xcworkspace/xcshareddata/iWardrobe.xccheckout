@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>4CAAC709-7CBE-4CD2-B28D-0480D64E8368</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>iWardrobe</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>471B6092A36FF34F3A7A4CF4288687ABB0EF25DC</key>
 		<string>https://github.com/karan4587/iWardrobe.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iWardrobe.xcodeproj/project.xcworkspace</string>
+	<string>iWardrobe.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>471B6092A36FF34F3A7A4CF4288687ABB0EF25DC</key>

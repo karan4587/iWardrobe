@@ -52,6 +52,9 @@
         case 1:
             identifier = @"secondRow";
             break;
+        case 2:
+            identifier = @"thirdRow";
+            break;
     }
     
     return identifier;
@@ -93,6 +96,9 @@
             break;
         case 1:
             identifier = @"secondRow";
+            break;
+        case 2:
+            identifier = @"thirdRow";
             break;
     }
     

@@ -10,7 +10,7 @@
 //#import "UIViewController+AMSlideMenu.h"
 #import "UIColor+CreateMethods.h"
 
-@interface Slide1VC () <UITableViewDataSource, UIAccelerometerDelegate>
+@interface Slide1VC () //<UITableViewDataSource, UIAccelerometerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -22,6 +22,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [self loadIntialData];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -29,10 +30,10 @@
     [super viewWillAppear:animated];
     
     // Setting navigation's bar tint color
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithHex:@"#365491" alpha:1];
+    //self.navigationController.navigationBar.barTintColor = [UIColor colorWithHex:@"#C555DC" alpha:1];
 }
 
-#pragma mark - TableView Deletage and Datasouce methods
+/*#pragma mark - TableView Deletage and Datasouce methods
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
@@ -62,6 +63,36 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
 
+    }
+}*/
+
+- (void) loadIntialData {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *path = [documentsDirectory stringByAppendingPathComponent:@"itemsApparel.plist"];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    if (![fileManager fileExistsAtPath: path]) {
+        
+        path = [documentsDirectory stringByAppendingPathComponent: [NSString stringWithFormat:@"itemsApparel.plist"] ];
+    }
+    
+    NSMutableDictionary *data;
+    
+    if ([fileManager fileExistsAtPath: path]) {
+        NSLog(@"FILE EXISTS!");
+        data = [[NSMutableDictionary alloc] initWithContentsOfFile: path];
+    }
+    else {
+        NSLog(@"FILE NOT EXISTS!");
+        // If the file doesn’t exist, create an empty dictionary
+        data = [[NSMutableDictionary alloc] init];
+        // Fill the empty array with our dummy data
+        NSArray *shirt = @[@"Shirt1.jpg",@"Shirt2.jpg",@"Shirt3.jpg",@"Shirt4.jpg",@"Shirt5.jpg",@"Shirt6.jpg"];
+        NSArray *pant = @[@"J1.jpg",@"J2.jpg",@"J3.jpg",@"J4.png",@"J5.jpg",@"J6.jpg"];
+        NSArray *combineData = [NSArray arrayWithObjects:shirt,pant, nil];
+        [data setObject:combineData forKey:@"combineData"];
+        [data writeToFile:path atomically:YES];
     }
 }
 
