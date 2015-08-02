@@ -6,17 +6,17 @@
 //  Copyright (c) 2014 SocialObjects Software. All rights reserved.
 //
 
-#import "Slide1VC.h"
+#import "Slide1Home.h"
 //#import "UIViewController+AMSlideMenu.h"
 #import "UIColor+CreateMethods.h"
 
-@interface Slide1VC () //<UITableViewDataSource, UIAccelerometerDelegate>
+@interface Slide1Home () //<UITableViewDataSource, UIAccelerometerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
-@implementation Slide1VC
+@implementation Slide1Home
 
 - (void)viewDidLoad
 {
@@ -88,11 +88,27 @@
         // If the file doesn’t exist, create an empty dictionary
         data = [[NSMutableDictionary alloc] init];
         // Fill the empty array with our dummy data
-        NSArray *shirt = @[@"Shirt1.jpg",@"Shirt2.jpg",@"Shirt3.jpg",@"Shirt4.jpg",@"Shirt5.jpg",@"Shirt6.jpg"];
-        NSArray *pant = @[@"J1.jpg",@"J2.jpg",@"J3.jpg",@"J4.png",@"J5.jpg",@"J6.jpg"];
-        NSArray *combineData = [NSArray arrayWithObjects:shirt,pant, nil];
-        [data setObject:combineData forKey:@"combineData"];
+        NSArray *s1 = @[@"s0.jpg",@"s1.jpg",@"s2.jpg",@"s3.jpg",@"s4.jpg",@"s5.jpg"];
+        NSArray *p1 = @[@"p0.jpg",@"p1.jpg",@"p2.jpg",@"p3.jpg",@"p4.jpg",@"p5.jpg"];
+        NSArray *wardrobeData = [NSArray arrayWithObjects:s1,p1, nil];
+        [data setObject:wardrobeData forKey:@"wardrobeData"];
         [data writeToFile:path atomically:YES];
+    }
+    
+    NSString *favouritePath = [documentsDirectory stringByAppendingPathComponent:@"favourites.plist"];
+    NSFileManager *favFileManager = [NSFileManager defaultManager];
+    
+    if (![favFileManager fileExistsAtPath: favouritePath]) {
+        favouritePath = [documentsDirectory stringByAppendingPathComponent: [NSString stringWithFormat:@"favourites.plist"] ];
+    }
+    
+    NSMutableDictionary *favouriteData;
+    
+    if ([fileManager fileExistsAtPath: favouritePath]) {
+        favouriteData = [[NSMutableDictionary alloc] initWithContentsOfFile:favouritePath];
+    } else {
+        favouriteData = [[NSMutableDictionary alloc] init];
+        [favouriteData writeToFile:favouritePath atomically:YES];
     }
 }
 
