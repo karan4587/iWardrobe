@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Slide1Home : UIViewController
+@interface Slide1Home : UITableViewController
 
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E3925EB1B75296900B4C67D /* homeCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3925EA1B75296900B4C67D /* homeCardCell.m */; };
+		9E3925F11B774A9B00B4C67D /* favouriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3925F01B774A9B00B4C67D /* favouriteViewController.m */; };
 		9E82CADA1B693AE900AF0AEE /* favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E82CAD71B693AE900AF0AEE /* favorite.png */; };
 		9E82CADB1B693AE900AF0AEE /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E82CAD81B693AE900AF0AEE /* home.png */; };
 		9E82CADC1B693AE900AF0AEE /* shirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E82CAD91B693AE900AF0AEE /* shirt.png */; };
@@ -58,6 +60,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E3925E91B75293000B4C67D /* homeCardCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = homeCardCell.h; sourceTree = "<group>"; };
+		9E3925EA1B75296900B4C67D /* homeCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeCardCell.m; sourceTree = "<group>"; };
+		9E3925EF1B774A8000B4C67D /* favouriteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = favouriteViewController.h; sourceTree = "<group>"; };
+		9E3925F01B774A9B00B4C67D /* favouriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = favouriteViewController.m; sourceTree = "<group>"; };
 		9E82CAD71B693AE900AF0AEE /* favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite.png; sourceTree = "<group>"; };
 		9E82CAD81B693AE900AF0AEE /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		9E82CAD91B693AE900AF0AEE /* shirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shirt.png; sourceTree = "<group>"; };
@@ -137,6 +143,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E3925E81B7528E900B4C67D /* iWardrobe Home Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9ED74F6E1B67FE4F00184459 /* Slide1Home.h */,
+				9ED74F6F1B67FE4F00184459 /* Slide1Home.m */,
+				9E3925E91B75293000B4C67D /* homeCardCell.h */,
+				9E3925EA1B75296900B4C67D /* homeCardCell.m */,
+			);
+			name = "iWardrobe Home Controllers";
+			sourceTree = "<group>";
+		};
+		9E3925EE1B7747D900B4C67D /* Favourite Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E3925EF1B774A8000B4C67D /* favouriteViewController.h */,
+				9E3925F01B774A9B00B4C67D /* favouriteViewController.m */,
+			);
+			name = "Favourite Controllers";
+			sourceTree = "<group>";
+		};
 		9E82CAD61B693AC300AF0AEE /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,10 +283,10 @@
 		9EBDD9DB1B67E03100F9C0F4 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9E3925EE1B7747D900B4C67D /* Favourite Controllers */,
+				9E3925E81B7528E900B4C67D /* iWardrobe Home Controllers */,
 				9EE855031B6CCE16004A470F /* Apparel Controllers */,
 				9EBDD9F91B67EB5600F9C0F4 /* LeftMenuVC.h */,
-				9ED74F6E1B67FE4F00184459 /* Slide1Home.h */,
-				9ED74F6F1B67FE4F00184459 /* Slide1Home.m */,
 				9EBDD9FA1B67EB5600F9C0F4 /* LeftMenuVC.m */,
 				9EBDD9F51B67E7FC00F9C0F4 /* Categories */,
 				9EBDD9DC1B67E0AF00F9C0F4 /* MainVC.h */,
@@ -408,9 +434,11 @@
 				9EBDD9EE1B67E40000F9C0F4 /* AMSlideMenuRightMenuSegue.m in Sources */,
 				9EA553811B663E10001D6AFE /* LoginViewController.m in Sources */,
 				9EBDD9DE1B67E0AF00F9C0F4 /* MainVC.m in Sources */,
+				9E3925EB1B75296900B4C67D /* homeCardCell.m in Sources */,
 				9EBDD9F11B67E43200F9C0F4 /* AMSlideMenuRightTableViewController.m in Sources */,
 				9EA5537E1B663E10001D6AFE /* AppDelegate.m in Sources */,
 				9EA5537B1B663E10001D6AFE /* main.m in Sources */,
+				9E3925F11B774A9B00B4C67D /* favouriteViewController.m in Sources */,
 				9EBDD9EB1B67E37D00F9C0F4 /* AMSlideMenuContentSegue.m in Sources */,
 				9EBDD9F81B67E82F00F9C0F4 /* UIColor+CreateMethods.m in Sources */,
 				9EBDD9E81B67E33B00F9C0F4 /* AMSlideMenuLeftTableViewController.m in Sources */,

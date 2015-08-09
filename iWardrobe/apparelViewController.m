@@ -103,7 +103,7 @@
     static NSString *identifier = @"Cell";
     
     apparelViewCell *cell = (apparelViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
-    UIImageView *apparelImage = (UIImageView *)[cell viewWithTag:100];
+    UIImageView *apparelImage = (UIImageView *)[cell viewWithTag:50];
     
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
                                                          NSUserDomainMask, YES);
